@@ -1,0 +1,43 @@
+@media (min-width: 800px) {
+    #root {
+        background-image: url(../assets/images/bg-desktop.svg);
+        background-size: cover;
+    }
+
+    .App {
+        gap: 2rem;
+
+        #company {
+            width: 15%;
+        }
+
+        #mockups {
+            width: 50%;
+        }
+
+        article {
+            display: flex;
+            gap: 2rem;
+
+            #text {
+                text-align: left;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                button {
+                    width: 35%;
+                }
+            }
+        }
+
+        #social-medias {
+            text-align: right;
+        }
+    }
+}

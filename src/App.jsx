@@ -1,4 +1,5 @@
 import './App.scss'
+import './style/Desktop.scss'
 import './constants/fonts.scss'
 import logo from "./assets/images/logo.svg";
 import mockups from "./assets/images/illustration-mockups.svg";

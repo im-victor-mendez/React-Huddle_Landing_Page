@@ -1,10 +1,14 @@
-.App {
+#root {
+    min-height: 100vh;
+
     background-color: hsl(257, 40%, 49%);
 
     background-image: url(./assets/images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
 
+.App {
     padding: 2rem 2rem 3rem;
 
     display: flex;
