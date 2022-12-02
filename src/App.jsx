@@ -1,15 +1,15 @@
-import './App.css'
+import './App.scss'
+import './constants/fonts.scss'
+import logo from "./assets/images/logo.svg";
+import mockups from "./assets/images/illustration-mockups.svg";
 
 function App() {
   return (
     <div className="App">
-      <div id='company'>
-        <img src="" alt="" />
-        <h1>Huddle</h1>
-      </div>
+      <img id='company' src={logo} alt="" />
 
       <article>
-        <img src="" alt="" />
+        <img id='mockups' src={mockups} alt="" />
 
         <div id='text'>
           <h1>Build The Community Your Fans Will Love</h1>
@@ -22,14 +22,14 @@ function App() {
       </article>
 
       <div id='social-medias'>
-        <a className='social-media' href="http://">
-          <i></i>
+        <a className='social-media'>
+          <ion-icon name="logo-facebook"></ion-icon>
         </a>
-        <a className='social-media' href="http://">
-          <i></i>
+        <a className='social-media'>
+          <ion-icon name="logo-twitter"></ion-icon>
         </a>
-        <a className='social-media' href="http://">
-          <i></i>
+        <a className='social-media'>
+          <ion-icon name="logo-instagram"></ion-icon>
         </a>
       </div>
     </div>

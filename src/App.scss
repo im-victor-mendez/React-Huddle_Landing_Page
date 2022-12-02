@@ -1,0 +1,69 @@
+.App {
+    background-color: hsl(257, 40%, 49%);
+
+    background-image: url(./assets/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    padding: 2rem 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    #company {
+        width: 45%;
+    }
+
+    #mockups {
+        width: 100%;
+        height: 100%;
+    }
+
+    #text {
+        text-align: center;
+
+        color: white;
+
+        h1 {
+            font-family: var(--font-family-poppins);
+            font-weight: 600;
+        }
+
+        p {
+            font-family: var(--font-family-open_sans);
+            font-weight: 400;
+        }
+    }
+
+    button {
+        font-family: var(--font-family-poppins);
+        font-weight: 400;
+
+        width: 50%;
+        padding: 0.5rem 0rem;
+
+        border-radius: 1.5rem;
+        border: 0rem;
+    }
+
+    #social-medias {
+        text-align: center;
+
+        .social-media {
+            border: 1px solid white;
+            border-radius: 100%;
+
+            padding: 0.5rem;
+            margin: 0rem 0.5rem;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            
+            ion-icon {
+                fill: white;
+            }
+        }
+    }
+}
