@@ -2,10 +2,13 @@
     #root {
         background-image: url(../assets/images/bg-desktop.svg);
         background-size: cover;
+
+        display: flex;
     }
 
     .App {
-        gap: 2rem;
+        justify-content: space-between;
+        gap: 0rem;
 
         #company {
             width: 15%;
@@ -13,11 +16,13 @@
 
         #mockups {
             width: 50%;
+            height: max-content;
         }
 
         article {
             display: flex;
-            gap: 2rem;
+            align-items: center;
+            gap: 0rem;
 
             #text {
                 text-align: left;
