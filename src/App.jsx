@@ -1,16 +1,37 @@
 import './App.scss'
 import './style/Desktop.scss'
 import './constants/fonts.scss'
+import { motion } from "framer-motion";
 import logo from "./assets/images/logo.svg";
 import mockups from "./assets/images/illustration-mockups.svg";
 
 function App() {
   return (
     <div className="App">
-      <img id='company' src={logo} alt="" />
+      <motion.img
+      id='company'
+      src={logo}
+      alt=""
+
+      whileHover={{
+        rotate: 360
+      }}
+      />
 
       <article>
-        <img id='mockups' src={mockups} alt="" />
+        <motion.img
+        id='mockups'
+        src={mockups}
+        alt=""
+
+        animate={{
+          y: [0, 20, -20, 0]
+        }}
+
+        transition={{
+          duration: 5, repeat: Infinity
+        }}
+      />
 
         <div id='text'>
           <h1>Build The Community Your Fans Will Love</h1>
@@ -18,20 +39,44 @@ function App() {
             You have a voice, but so does your audience.
             Create connections with your users as you engage in genuine discussion.
           </p>
-          <button>Register</button>
+          <motion.button
+          whileHover={{
+            scale: 1.5
+          }}
+          >Register</motion.button>
         </div>
       </article>
 
       <div id='social-medias'>
-        <a className='social-media'>
+        <motion.a
+        className='social-media'
+
+        whileHover={{
+          scale: 1.5
+        }}
+        >
           <ion-icon name="logo-facebook"></ion-icon>
-        </a>
-        <a className='social-media'>
+        </motion.a>
+
+        <motion.a
+        className='social-media'
+        
+        whileHover={{
+          scale: 1.5
+        }}
+        >
           <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <a className='social-media'>
+        </motion.a>
+        
+        <motion.a
+        className='social-media'
+        
+        whileHover={{
+          scale: 1.5
+        }}
+        >
           <ion-icon name="logo-instagram"></ion-icon>
-        </a>
+        </motion.a>
       </div>
     </div>
   )
